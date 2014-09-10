@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!-- main:css -->
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <!-- endinject -->
+</head>
+<body ng-controller='GithubCtrl'>
+<h1>Github Users</h1>
+<ul>
+    <li ng-repeat='user in users'>
+        <a href='https://github.com/{{user.login}}'>
+            {{user.login}}
+        </a>
+    </li>
+</ul>
+
+<!-- angular:js -->
+<!-- endinject -->
+<!-- app:js -->
+<script src="/dist/js/app.js"></script>
+<!-- endinject -->
+</body>
+</html>

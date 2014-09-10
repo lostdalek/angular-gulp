@@ -1,0 +1,48 @@
+@import _config
+@import _loadBootstrap
+@import _angular-busy
+
+
+//@import compass/css3
+html
+  overflow-y: scroll
+body
+  background-color: #ecf0f1
+
+.contentTransition
+  opacity: 1
+
+#loading
+  position: absolute
+  width: 170px
+  top: 45%
+  left: 50%
+  margin-left: -85px
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
+  z-index: 1040
+  background-color: #FFF
+  p
+    text-align: center
+
+.growl
+  position: fixed
+  top: 60px
+  right: 10px
+  float: right
+  width: 340px
+  z-index: 9999
+
+.growl-item
+  &.ng-enter, &.ng-leave
+    -webkit-transition: .5s linear all
+    -moz-transition: .5s linear all
+    -o-transition: .5s linear all
+    transition: .5s linear all
+  &.ng-enter
+    opacity: 0
+  &.ng-leave
+    &.ng-leave-active
+      opacity: 0
+    opacity: 1
+  &.ng-enter.ng-enter-active
+    opacity: 1
