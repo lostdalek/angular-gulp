@@ -16,7 +16,7 @@ gulp.task('css', function(){
         //project: config.SRC_SASS,
         //project: config.DIST_ASSETS,
         css: path.join(config.TMP, 'css'),
-        sass: './',
+        sass: '',
         sourcemap: false,
         time: true,
         options: 'nested' //nested, expanded, compact, or compressed
