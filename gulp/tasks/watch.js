@@ -56,4 +56,6 @@ gulp.task('watch',  function() {
         'html'
     ]);
     gulp.watch(path.join(config.DIST_JS, "*.*")).on('change', refresh.changed);
+    gulp.watch(path.join(config.DIST_CSS, "*.*")).on('change', refresh.changed);
+    gulp.watch(path.join(config.DIST, "*.html")).on('change', refresh.changed);
 });

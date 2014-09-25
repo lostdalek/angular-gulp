@@ -16,7 +16,7 @@ once installed see [update dependencies](#updating-dependencies)
 
 ## Updating Dependencies
 
-###Ensure node tools, preprocessing scripts (napa) and gulp plugins are up to date:
+###Ensure node tools and gulp plugins are up to date:
 
 ```bash
 $ npm install
