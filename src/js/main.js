@@ -14,7 +14,7 @@
         'ngUser',
         'cachedTemplates'   // --> generated on build
     ]);
-    console.log('josé')
+    console.log('josé');
 
     //angular configuration
     angular.element(document).ready(function () {
